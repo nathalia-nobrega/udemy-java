@@ -1,21 +1,22 @@
-package br.nathalia.udemy.interfaces.car_rental_exercise.exercise_contract.entities;
+package br.nathalia.udemy.interfaces.exercise_contract.entities;
 
 import java.time.LocalDate;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class Contract {
     private Integer contractNumber;
     private Double contractValue;
     private LocalDate date;
-    private Integer installments;
+    private Set<Installment> installments = new LinkedHashSet<>();
 
     public Contract() {
     }
 
-    public Contract(Integer contractNumber, Double contractValue, LocalDate date, Integer installments) {
+    public Contract(Integer contractNumber, Double contractValue, LocalDate date) {
         this.contractNumber = contractNumber;
         this.contractValue = contractValue;
         this.date = date;
-        this.installments = installments;
     }
 
     public Integer getContractNumber() {
@@ -33,16 +34,13 @@ public class Contract {
     public void setContractValue(Double contractValue) {
         this.contractValue = contractValue;
     }
+
     public LocalDate getDate() {
         return date;
     }
 
-    public Integer getInstallments() {
+    public Set<Installment> getInstallments() {
         return installments;
-    }
-
-    public void setInstallments(Integer installments) {
-        this.installments = installments;
     }
 
     @Override
