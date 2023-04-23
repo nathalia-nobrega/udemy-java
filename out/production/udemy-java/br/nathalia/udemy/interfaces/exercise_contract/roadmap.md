@@ -1,0 +1,3 @@
+- ~~Create Contract entity (contract number, contract value, number os installments)~~
+- ~~Create ContractService (class that processes contracts)~~
+- ~~Create OnlinePaymentService - calculateInstallment()~~
