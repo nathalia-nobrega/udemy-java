@@ -1,4 +1,4 @@
-package br.nathalia.udemy.enums_composition.class_152_exercise.entities;
+package br.nathalia.udemy.generics_set_map.generics.class_239.entities;
 
 public class Product implements Comparable<Product> {
     private String name;
@@ -30,10 +30,7 @@ public class Product implements Comparable<Product> {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+        return name + ", " + price;
     }
 
     @Override
